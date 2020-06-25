@@ -50,7 +50,8 @@ const sauceConfig = sauceEnabled
         'sauce:options': {
           build: buildNumber
         }
-      },
+      }/*,
+      /* IE9 on Sauce Labs is not working currently
       {
         browserName: 'internet explorer',
         browserVersion: '9.0',
@@ -59,6 +60,7 @@ const sauceConfig = sauceEnabled
           build: buildNumber
         }
       }
+      */
     ],
     services: services.concat([['sauce', { sauceConnect: true }]])
   }
